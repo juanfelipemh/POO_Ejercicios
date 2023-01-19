@@ -24,29 +24,29 @@ En pepita llamar tocar flauta e imprimir el mensaje en consola
 
 public class EjercicioUno {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        Pedro pedro = new Pedro(); 
-        ModeloPersona datosPedro = new ModeloPersona("Negro", 29, "Pedro");
-        pedro.llenarInformacionPersona(datosPedro);
-        System.out.println(pedro.tocarPiano("The river flows in you"));
-        System.out.println(pedro.caminar());
-        
-        // Imprimir la información de Pedro
-        System.out.println("Pedro tiene el pelo de color " + pedro.crearPersona.getColorPelo() + " de nombre " + pedro.crearPersona.getNombre() + " y su edad es " + pedro.crearPersona.getEdad());
-        System.out.println(pedro.imprimirInformaciónPersona());
-        
-        System.out.println("\n--------------------------------\n");
+            Pedro pedro = new Pedro(); 
+            ModeloPersona datosPedro = new ModeloPersona("Negro", 29, "Pedro");
+            pedro.llenarInformacionPersona(datosPedro);
+            System.out.println(pedro.tocarPiano("The river flows in you"));
+            System.out.println(pedro.caminar());
 
-        Pepita pepita = new Pepita();
-        ModeloPersona datosPepita = new ModeloPersona("Rojo", 25, "Pepita");
-        pepita.llenarInformacionPersona(datosPepita);
-        System.out.println(pepita.caminar());
-        System.out.println(pepita.tocarFlauta("Los pollitos dice..."));
-        
-        // Imprimir la información de Pepita
-        System.out.println("Pepita tiene el pelo de color " + pedro.crearPersona.getColorPelo() + " de nombre " + pedro.crearPersona.getNombre() + " y su edad es " + pedro.crearPersona.getEdad());
-        System.out.println(pepita.imprimirInformaciónPersona());
+            // Imprimir la información de Pedro
+            System.out.println("Pedro tiene el pelo de color " + pedro.crearPersona.getColorPelo() + " de nombre " + pedro.crearPersona.getNombre() + " y su edad es " + pedro.crearPersona.getEdad());
+            System.out.println(pedro.imprimirInformaciónPersona());
+
+            System.out.println("\n--------------------------------\n");
+
+            Pepita pepita = new Pepita();
+            ModeloPersona datosPepita = new ModeloPersona("Rojo", 25, "Pepita");
+            pepita.llenarInformacionPersona(datosPepita);
+            System.out.println(pepita.caminar());
+            System.out.println(pepita.tocarFlauta("Los pollitos dice..."));
+
+            // Imprimir la información de Pepita
+            System.out.println("Pepita tiene el pelo de color " + pedro.crearPersona.getColorPelo() + " de nombre " + pedro.crearPersona.getNombre() + " y su edad es " + pedro.crearPersona.getEdad());
+            System.out.println(pepita.imprimirInformaciónPersona());
 
     }
 }
