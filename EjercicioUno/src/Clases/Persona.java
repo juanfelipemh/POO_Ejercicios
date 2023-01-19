@@ -12,6 +12,11 @@ public class Persona implements AccionPersona { // Implementa la interface cread
         crearPersona = datosPersona;
     }
     
+    // Retorna los valores almacenados en la variable global, y se llama en la instancia del main de las clases hijas "Pedro" y "Pepita"
+    public String imprimirInformaciónPersona(){
+        return crearPersona.getNombre() + " tiene el cabello de color " + crearPersona.getColorPelo() + " y su edad es " + crearPersona.getEdad();
+    }
+    
     // Otro método que recibe parámetros para imprimir el Objeto ModeloPersona, que se llama al instanciar modelo Pedro y Pepita
     public String llenarDatos(String colorPelo, int edad, String nombre){
         ModeloPersona persona = new ModeloPersona(colorPelo, edad, nombre);

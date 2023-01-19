@@ -3,7 +3,7 @@ package ejerciciouno;
 import Clases.ModeloPersona;
 import Clases.Pedro;
 import Clases.Pepita;
-import Clases.Persona;
+
 
 /* 
 Main debe:
@@ -31,7 +31,10 @@ public class EjercicioUno {
         pedro.llenarInformacionPersona(datosPedro);
         System.out.println(pedro.tocarPiano("The river flows in you"));
         System.out.println(pedro.caminar());
+        
+        // Imprimir la información de Pedro
         System.out.println("Pedro tiene el pelo de color " + pedro.crearPersona.getColorPelo() + " de nombre " + pedro.crearPersona.getNombre() + " y su edad es " + pedro.crearPersona.getEdad());
+        System.out.println(pedro.imprimirInformaciónPersona());
         
         System.out.println("\n--------------------------------\n");
 
@@ -40,10 +43,10 @@ public class EjercicioUno {
         pepita.llenarInformacionPersona(datosPepita);
         System.out.println(pepita.caminar());
         System.out.println(pepita.tocarFlauta("Los pollitos dice..."));
+        
+        // Imprimir la información de Pepita
         System.out.println("Pepita tiene el pelo de color " + pedro.crearPersona.getColorPelo() + " de nombre " + pedro.crearPersona.getNombre() + " y su edad es " + pedro.crearPersona.getEdad());
-        
-        Persona datos = new Persona();
-        System.out.println(datos);
-        
+        System.out.println(pepita.imprimirInformaciónPersona());
+
     }
 }
