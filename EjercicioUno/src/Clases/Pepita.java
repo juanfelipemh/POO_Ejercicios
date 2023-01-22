@@ -10,6 +10,6 @@ public class Pepita extends Persona {
     
     @Override
     public String caminar(){
-        return super.caminar(); // Llama el método creado en la clase Padre
+        return super.caminar() + "muy lento"; // Llama el método creado en la clase Padre
     }
 }

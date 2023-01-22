@@ -8,7 +8,7 @@ public class Pedro extends Persona {
     
     @Override
     public String caminar(){
-        return "Pedro esta caminando muy rapido..."; // Se le asigna el nuevo atributo a caminar 
+        return "Pedro esta caminando muy rapido..."; // Se sobreescribe el método y se le asigna un nuevo comportamiento
     }
    
 }
