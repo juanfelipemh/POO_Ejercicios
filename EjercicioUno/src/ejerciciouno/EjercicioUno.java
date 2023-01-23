@@ -26,27 +26,27 @@ public class EjercicioUno {
 
         public static void main(String[] args) {
 
-            Pedro pedro1 = new Pedro(); 
+            Pedro pedro = new Pedro(); 
             ModeloPersona datosPedro = new ModeloPersona("Negro", 29, "Pedro");
-            pedro1.llenarInformacionPersona(datosPedro);
-            System.out.println(pedro1.tocarPiano("The river flows in you"));
-            System.out.println(pedro1.caminar());
+            pedro.llenarInformacionPersona(datosPedro);
+            System.out.println(pedro.tocarPiano("The river flows in you"));
+            System.out.println(pedro.caminar());
 
             // Imprimir la información de Pedro
-            System.out.println("Pedro tiene el pelo de color " + pedro1.personaGlobal.getColorPelo() + " de nombre " + pedro1.personaGlobal.getNombre() + " y su edad es " + pedro1.personaGlobal.getEdad());
-            System.out.println(pedro1.imprimirInformacionPersona());
+            System.out.println("Pedro tiene el pelo de color " + pedro.personaGlobal.getColorPelo() + " de nombre " + pedro.personaGlobal.getNombre() + " y su edad es " + pedro.personaGlobal.getEdad());
+            System.out.println(pedro.imprimirInformacionPersona());
 
             System.out.println("\n--------------------------------\n");
 
-            Pepita pepita1 = new Pepita();
+            Pepita pepita = new Pepita();
             ModeloPersona datosPepita = new ModeloPersona("Rojo", 25, "Pepita");
-            pepita1.llenarInformacionPersona(datosPepita);
-            System.out.println(pepita1.caminar());
-            System.out.println(pepita1.tocarFlauta("Los pollitos dice..."));
+            pepita.llenarInformacionPersona(datosPepita);
+            System.out.println(pepita.caminar());
+            System.out.println(pepita.tocarFlauta("Los pollitos dice..."));
 
             // Imprimir la información de Pepita
-            System.out.println("Pepita tiene el pelo de color " + pepita1.personaGlobal.getColorPelo() + " de nombre " + pepita1.personaGlobal.getNombre() + " y su edad es " + pepita1.personaGlobal.getEdad());
-            System.out.println(pepita1.imprimirInformacionPersona());
+            System.out.println("Pepita tiene el pelo de color " + pepita.personaGlobal.getColorPelo() + " de nombre " + pepita.personaGlobal.getNombre() + " y su edad es " + pepita.personaGlobal.getEdad());
+            System.out.println(pepita.imprimirInformacionPersona());
 
     }
 }

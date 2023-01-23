@@ -23,6 +23,7 @@
 hs_err_pid*
 
 **/nbproject/private/
+**/nbproject/private/private.xml
 **/nbproject/Makefile-*.mk
 **/nbproject/Package-*.bash
 build/
@@ -30,3 +31,6 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+**/nbproject/project.properties
+**/nbproject/genfiles.properties
+/manifest.mf
