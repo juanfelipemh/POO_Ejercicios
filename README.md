@@ -32,8 +32,8 @@ classes: </p>
   <li>Instantiate Pedro</li>
   <li>Create Pedro's person model</li>
   <li>In pedro calls fill out information and send Pedro's model</li>
-  <li>In Pedro calls to play piano</li>
-  <li>In Pedro calls to walk</li>
+  <li>In pedro calls to play piano</li>
+  <li>In pedro calls to walk</li>
   <li>Create a message with Pedro's information, which was stored in the parent's global variable that says “Pedro has hair color{HairColor} with name {Name } and Age {age}</li>
   <li>Instantiate Pepita</li>
   <li>Create pepita persona model</li>
