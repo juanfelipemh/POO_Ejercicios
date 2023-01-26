@@ -29,18 +29,38 @@ classes: </p>
 
 <p>Main must: </p>
 <ul>
-<li>Instantiate peter</li>
+  <li>Instantiate Pedro</li>
   <li>Create Pedro's person model</li>
   <li>In pedro calls fill out information and send Pedro's model</li>
   <li>In Pedro calls to play piano</li>
   <li>In Pedro calls to walk</li>
   <li>Create a message with Pedro's information, which was stored in the parent's global variable that says “Pedro has hair color{HairColor} with name {Name } and Age {age}</li>
-  <li>Instantiate pepita</li>
+  <li>Instantiate Pepita</li>
   <li>Create pepita persona model</li>
   <li>In pepita calls fill in information and send the nugget model</li>
   <li>In pepita calls walk</li>
   <li>In pepita calls play flute and print the message in console</li>
 </ul>
+
+<h3>Excercise # 2: </h3>
+<p>According with the following diagram, you can generate a new project on JAVA where you create the 
+classes: </p>
+<img src="https://res.cloudinary.com/dx3v0vmpb/image/upload/v1674739633/samples/EjercicioDos_UML_yzryb7.jpg" width="1000" >
+
+<p>Main must: </p>
+<ul>
+  <li>Instantiate Colibri</li>
+  <li>In colibri calls to die method</li>
+  <li>In colibri calls to reincarnate method</li>
+  <li>In colibri calls the Animal parent class</li>
+  <li>In colibri calls the Ave parent class</li>
+  <li>Instantiate Vaca</li>
+  <li>In vaca calls to die method</li>
+  <li>In vaca calls to reincarnate method</li>
+  <li>In vaca calls the Animal parent class</li>
+  <li>In vaca calls the Mamifero parent class</li>
+</ul>
+
 
 ------ Spanish Version ------
 
@@ -85,4 +105,20 @@ classes: </p>
   <li>En pepita llamar tocar flauta e imprimir el mensaje en consola</li>
 </ul>
 
+<h3>Ejercicio # 2: </h3>
+<p>De acuerdo con el siguiente diagrama, se debe generar un nuevo proyecto en Java donde se reflejen los Clases: </p>
+<img src="https://res.cloudinary.com/dx3v0vmpb/image/upload/v1674739633/samples/EjercicioDos_UML_yzryb7.jpg" width="1000" >
 
+<p>Main debe: </p>
+<ul>
+  <li>Instanciar Colibri</li>
+  <li>En colibri llamar el método de morir</li>
+  <li>En colibri llamar el método de reencarnar</li>
+  <li>En colibri llamar el métod de la clase padre Animal</li>
+  <li>En colibri llamar el métod de la clase padre Ave</li>
+  <li>Instanciar Vaca</li>
+  <li>En vaca llamar el método de morir</li>
+  <li>En vaca llamar el método de reencarnar</li>
+  <li>En vaca llamar el métod de la clase padre Animal</li>
+  <li>En vaca llamar el métod de la clase padre Mamífero</li>
+</ul>
