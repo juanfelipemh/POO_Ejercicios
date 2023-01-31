@@ -2,8 +2,7 @@ package interfaces;
 
 public interface Muerte {
     
-    public String morir(int anoNacimiento, int anoFallecimiento, String causaMuerte);
+    public void morir(int anoNacimiento, int anoFallecimiento, String causaMuerte);
     
-    public String reencarnar(String dato);
-    
+    public String reencarnar(String dato); 
 }

@@ -56,6 +56,4 @@ public class ModeloAnimal {
     public void setPeso(float peso) {
         this.peso = peso;
     }
-    
-    
 }

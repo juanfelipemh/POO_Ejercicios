@@ -10,15 +10,15 @@ public class Colibri extends Ave implements Muerte {
     }
        
     @Override
-    public String morir(int anoNacimiento, int anoFallecimiento, String causaMuerte) {
+    public void morir(int anoNacimiento, int anoFallecimiento, String causaMuerte) {
         int edad;
         edad = anoFallecimiento - anoNacimiento;
-        
-        return "La fecha de su muerte es " + anoFallecimiento +", vivio " + edad + " anios y murio por " + causaMuerte;                           
+        System.out.println("La fecha de su muerte es " + anoFallecimiento +", vivio " + edad + " anios y murio por " + causaMuerte);                           
     }
 
     @Override
     public String reencarnar(String dato) {
+        
        return dato;
     }
     
@@ -34,7 +34,7 @@ public class Colibri extends Ave implements Muerte {
     * Sobrecarga de constructor pero que recibe un parámetro. 
     * @param datosColibri Este recibe el dato enviado a la variable global
     */
-        public Colibri(ModeloAnimal datosColibri){
+    public Colibri(ModeloAnimal datosColibri){
         llenarInformacionAnimal(datosColibri);      
     }
 }
