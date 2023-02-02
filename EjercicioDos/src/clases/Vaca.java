@@ -10,17 +10,17 @@ public class Vaca extends Mamifero implements Muerte{
     }
     
     @Override
-    public void morir(int anoNacimiento, int anoFallecimiento, String causaMuerte) {
+    public String morir(int anoNacimiento, int anoFallecimiento, String causaMuerte) {
         int edad;
         float valor;
         edad = (anoFallecimiento - anoNacimiento);
         valor = edad * 2;
-        System.out.println(valor % 2 == 0 ? "La fecha de su muerte " + anoFallecimiento + ", el numero es par y vivio " +  edad + " anios y murio por " + causaMuerte : "La fecha de su muerte " + anoFallecimiento + ", el numero es impar y vivio " +  edad + " anios y murio por " + causaMuerte); 
+        return "La fecha de su muerte " + anoFallecimiento + ", el numero es " + (valor % 2 == 0 ? "par" : "impar") + " y vivio " + edad + " anios y murio por " + causaMuerte;
     }
 
     @Override
     public String reencarnar(String dato) {
-        return dato + " Tu puedes hacerlo!";
+        return dato + ", tu puedes hacerlo!";
     }
     
     /*
