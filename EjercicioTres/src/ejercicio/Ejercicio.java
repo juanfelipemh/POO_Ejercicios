@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 public class Ejercicio {
-
+    
     public static void main(String[] args) {
         
         List<String> historialGeneral = new ArrayList<>();
@@ -40,10 +40,11 @@ public class Ejercicio {
                     historialGeneral.addAll(calculadoraInfantil.getHistorial());
                 }
                 case 4 -> {
-                    JOptionPane.showMessageDialog(null,  "Ver consola con los resultados" );
+                    StringBuilder resultado = new StringBuilder();
                     for(String i : historialGeneral){
-                        System.out.println(i);
+                        resultado.append("\n").append(i);    
                     }
+                    JOptionPane.showMessageDialog(null,resultado.toString());
                 }   
                 case 5 ->
                     JOptionPane.showMessageDialog(null, "Gracias por su visita!");
