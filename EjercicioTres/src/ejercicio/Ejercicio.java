@@ -1,9 +1,9 @@
 package ejercicio;
 
-import clases.Calculadora;
 import clases.CalculadoraAvanzada;
 import clases.CalculadoraBasica;
 import clases.CalculadoraInfantil;
+import java.util.ArrayList;
 import java.util.List;
 
 import java.util.Scanner;
@@ -11,7 +11,11 @@ import java.util.Scanner;
 public class Ejercicio {
     static Scanner entrada = new Scanner(System.in);
     
+    
+    
     public static void main(String[] args) {
+        
+        List<String> historialGeneral = new ArrayList<>();
  
         int opcion;
         do {
@@ -31,21 +35,21 @@ public class Ejercicio {
                 case 1 -> {
                     CalculadoraBasica calculadoraBasica = new CalculadoraBasica();
                     calculadoraBasica.operarCalculadora();
+                    historialGeneral.addAll(calculadoraBasica.getHistorial());
                 }
                 case 2 -> {
                     CalculadoraAvanzada calculadoraAvanzada = new CalculadoraAvanzada();
                     calculadoraAvanzada.operarCalculadora();
+                    historialGeneral.addAll(calculadoraAvanzada.getHistorial());
                 }
                 case 3 -> {
                     CalculadoraInfantil calculadoraInfantil = new CalculadoraInfantil();
                     calculadoraInfantil.operarCalculadora();
+                    historialGeneral.addAll(calculadoraInfantil.getHistorial());
                 }
                 case 4 -> {
                     System.out.println("Resultados");
-                    Calculadora res = new Calculadora();
-                    List<String> datos = res.getHistorial();
-                    System.out.println(datos.size());
-                    for(String i : datos){
+                    for(String i : historialGeneral){
                         System.out.println(i);
                     }
                 }   

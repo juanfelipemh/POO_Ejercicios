@@ -37,7 +37,7 @@ public class Calculadora {
         for (double i : numeros) {
             num += i;   
         }
-        historial.add("Resultado es " + num);
+        historial.add("Resultado de la suma es " + num);
         return num;
     }
 
@@ -46,6 +46,7 @@ public class Calculadora {
         for (int i = 1; i < numeros.size(); i++) {
             num -= numeros.get(i);
         }
+        historial.add("Resultado de la resta es " + num);
         return num;
     }
 
@@ -54,6 +55,7 @@ public class Calculadora {
         for (double i : numeros) {
             num *= i;
         }
+        historial.add("Resultado de la multiplicacion es " + num);
         return num;
     }
 
@@ -62,9 +64,10 @@ public class Calculadora {
         for (int i = 1; i < numeros.size(); i++) {
             num = num / numeros.get(i);
         }
+        historial.add("Resultado de la division es " + num);
         return num;
     }
-
+    
     public void operarCalculadora() {
     } 
     

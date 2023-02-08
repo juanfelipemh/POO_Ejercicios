@@ -34,6 +34,7 @@ public class CalculadoraAvanzada extends Calculadora {
         for(double numero : numeros){
             num = Math.pow(numero, 2);
         }
+        historial.add("Resultado de la potencia es " + num);
         return num;
     }
     
@@ -42,6 +43,7 @@ public class CalculadoraAvanzada extends Calculadora {
         for(double numero: numeros){
             num = Math.sqrt(numero);
         }
+        historial.add("Resultado de la raiz es " + num);
         return num;
     }
         

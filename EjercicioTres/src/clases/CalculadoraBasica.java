@@ -3,8 +3,7 @@ package clases;
 import java.util.List;
 
 public class CalculadoraBasica extends Calculadora{
-
-
+    
     @Override
     public double suma(List<Double> numeros) {
         return super.suma(numeros); 
