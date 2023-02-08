@@ -44,7 +44,7 @@ public class Ejercicio {
                     for(String i : historialGeneral){
                         resultado.append("\n").append(i);    
                     }
-                    JOptionPane.showMessageDialog(null,resultado.toString());
+                    JOptionPane.showMessageDialog(null,resultado.toString(), "Resultados", JOptionPane.INFORMATION_MESSAGE);
                 }   
                 case 5 ->
                     JOptionPane.showMessageDialog(null, "Gracias por su visita!");
