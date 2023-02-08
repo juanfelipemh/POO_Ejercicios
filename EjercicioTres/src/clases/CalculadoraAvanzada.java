@@ -1,6 +1,7 @@
 package clases;
 
 import java.util.List;
+import javax.swing.JOptionPane;
 
 public class CalculadoraAvanzada extends Calculadora {
 
@@ -34,7 +35,7 @@ public class CalculadoraAvanzada extends Calculadora {
         for(double numero : numeros){
             num = Math.pow(numero, 2);
         }
-        historial.add("Resultado de la potencia es " + num);
+        historial.add("Resultado de la potencia " + dato + " es " + num);
         return num;
     }
     
@@ -43,7 +44,7 @@ public class CalculadoraAvanzada extends Calculadora {
         for(double numero: numeros){
             num = Math.sqrt(numero);
         }
-        historial.add("Resultado de la raiz es " + num);
+        historial.add("Resultado de la raiz " + dato + " es " + num);
         return num;
     }
         
@@ -51,8 +52,8 @@ public class CalculadoraAvanzada extends Calculadora {
     public void operarCalculadora() {
         int opcion;
         do {
-            System.out.println("\nCalculadora Avanzada");
-            System.out.println("""
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("""
+                            CALCULADORA AVANZADA\n
                             Ingrese una opcion:
                             1. Sumar
                             2. Restar
@@ -60,49 +61,47 @@ public class CalculadoraAvanzada extends Calculadora {
                             4. Dividir
                             5. Potencia a la 2
                             6. Raiz Cuadrada  
-                            7. Salir""");
-            System.out.print("Opcion: ");
-            opcion = Integer.parseInt(entrada.nextLine());
+                            7. Salir"""));
             switch (opcion) {
                 case 1 -> {
                     double total;
                     List<Double> numerosSuma = calcular();
                     total = suma(numerosSuma);
-                    System.out.println("El resultado de la suma es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la suma " + dato + " es: " + total);
                 }
                 case 2 -> {
                     double total;
                     List<Double> numerosResta = calcular();
                     total = resta(numerosResta);
-                    System.out.println("El resultado de la resta es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la resta " + dato + " es: " + total);
                 }
                 case 3 -> {
                     double total;
                     List<Double> numerosMultiplicacion = calcular();
                     total = multiplicacion(numerosMultiplicacion);
-                    System.out.println("El resultado de la multiplicacion es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + dato + " es: " + total);
                 }
                 case 4 -> {
                     double total;
                     List<Double> numerosDivision = calcular();
                     total = division(numerosDivision);
-                    System.out.println("El resultado de la division es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la division " + dato + " es: " + total);
                 }
                 case 5 -> {
                     double total;
                     List<Double> numerosPotencia = calcular();
                     total = potencia(numerosPotencia);
-                    System.out.println("El resultado de la potencia es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la potencia " + dato + " es: " + total);
                 }
                 case 6 -> {
                     double total;
                     List<Double> numerosRaiz = calcular();
                     total = raiz(numerosRaiz);
-                    System.out.println("El resultado de la raiz es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la raiz " + dato + " es: " + total);
                 }
                 case 7 -> {
                 }
-                default -> System.out.println("Opcion incorrecta");
+                default -> JOptionPane.showMessageDialog(null, "Opcion " + opcion + " incorrecta");
             }
         } while (opcion != 7);
     }    

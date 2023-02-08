@@ -5,32 +5,24 @@ import clases.CalculadoraBasica;
 import clases.CalculadoraInfantil;
 import java.util.ArrayList;
 import java.util.List;
-
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Ejercicio {
-    static Scanner entrada = new Scanner(System.in);
-    
-    
-    
+
     public static void main(String[] args) {
         
         List<String> historialGeneral = new ArrayList<>();
  
         int opcion;
         do {
-            System.out.println("CALCULADORA");
-            System.out.println();
-            System.out.println("""
-                           Ingrese una opcion: 
-                           1. Calculadora Basica
-                           2. Calculadora Avanzada 
-                           3. Calculadora Infantil
-                           4. Resultados
-                           5. Cerrar aplicacion""");
-            System.out.print("Opcion: ");
-            opcion = Integer.parseInt(entrada.nextLine());
-
+            opcion = Integer.parseInt(JOptionPane.showInputDialog(null, """
+                                                CALCULADORA\n
+                                                Ingrese una opcion: 
+                                                1. Calculadora Basica
+                                                2. Calculadora Avanzada 
+                                                3. Calculadora Infantil
+                                                4. Resultados
+                                                5. Cerrar aplicacion"""));          
             switch (opcion) {
                 case 1 -> {
                     CalculadoraBasica calculadoraBasica = new CalculadoraBasica();
@@ -48,15 +40,15 @@ public class Ejercicio {
                     historialGeneral.addAll(calculadoraInfantil.getHistorial());
                 }
                 case 4 -> {
-                    System.out.println("Resultados");
+                    JOptionPane.showMessageDialog(null,  "Ver consola con los resultados" );
                     for(String i : historialGeneral){
                         System.out.println(i);
                     }
                 }   
                 case 5 ->
-                    System.out.println("Gracias por su visita!");
+                    JOptionPane.showMessageDialog(null, "Gracias por su visita!");
                 default ->
-                    System.out.println("Opcion errada");
+                    JOptionPane.showMessageDialog(null, "Opcion " + opcion + " errada");
             }
         } while (opcion != 5);
     }

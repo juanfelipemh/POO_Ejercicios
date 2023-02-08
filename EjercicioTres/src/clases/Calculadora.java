@@ -2,11 +2,11 @@ package clases;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Calculadora {
-
-    static Scanner entrada = new Scanner(System.in);
+    
+    public String dato;
     
     public List<String> historial;
     
@@ -23,8 +23,8 @@ public class Calculadora {
         String datos;
         String[] datosSeparados;
         String patronSplit = "\\+|-|\\*|/";
-        System.out.print("Ingrese los numeros de la operacion: ");
-        datos = entrada.nextLine();
+        datos = JOptionPane.showInputDialog("Ingrese los números: ");
+        dato = datos;
         datosSeparados = datos.split(patronSplit);
         for (String numero : datosSeparados) {
             numeros.add(Double.valueOf(numero));          
@@ -37,7 +37,7 @@ public class Calculadora {
         for (double i : numeros) {
             num += i;   
         }
-        historial.add("Resultado de la suma es " + num);
+        historial.add("Resultado de la suma " + dato + " es " + num);
         return num;
     }
 
@@ -46,7 +46,7 @@ public class Calculadora {
         for (int i = 1; i < numeros.size(); i++) {
             num -= numeros.get(i);
         }
-        historial.add("Resultado de la resta es " + num);
+        historial.add("Resultado de la resta " + dato + " es " + num);
         return num;
     }
 
@@ -55,7 +55,7 @@ public class Calculadora {
         for (double i : numeros) {
             num *= i;
         }
-        historial.add("Resultado de la multiplicacion es " + num);
+        historial.add("Resultado de la multiplicacion " + dato + " es " + num);
         return num;
     }
 
@@ -64,11 +64,10 @@ public class Calculadora {
         for (int i = 1; i < numeros.size(); i++) {
             num = num / numeros.get(i);
         }
-        historial.add("Resultado de la division es " + num);
+        historial.add("Resultado de la division " + dato + " es " + num);
         return num;
     }
     
     public void operarCalculadora() {
-    } 
-    
+    }  
 }
