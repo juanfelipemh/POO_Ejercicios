@@ -19,31 +19,22 @@ public class CalculadoraBasica extends Calculadora {
                             5. Salir"""));
             switch (opcion) {
                 case 1 -> {
-                    double total;
                     List<Double> numerosSuma = calcular();
-                    total = suma(numerosSuma);
-                    JOptionPane.showMessageDialog(null, "El resultado de la suma " + datoOperacion + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la suma " + datoOperacion + " es: " + suma(numerosSuma));
                 }
                 case 2 -> {
-                    double total;
                     List<Double> numerosResta = calcular();
-                    total = resta(numerosResta);
-                    JOptionPane.showMessageDialog(null, "El resultado de la resta " + datoOperacion + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la resta " + datoOperacion + " es: " + resta(numerosResta));
                 }
                 case 3 -> {
-                    double total;
                     List<Double> numerosMultiplicacion = calcular();
-                    total = multiplicacion(numerosMultiplicacion);
-                    JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + datoOperacion + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + datoOperacion + " es: " + multiplicacion(numerosMultiplicacion));
                 }
                 case 4 -> {
-                    double total;
                     List<Double> numerosDivision = calcular();
-                    total = division(numerosDivision);
-                    JOptionPane.showMessageDialog(null, "El resultado de la division " + datoOperacion + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la division " + datoOperacion + " es: " + division(numerosDivision));
                 }
-                case 5 -> {
-                }
+                case 5 -> {}
                 default ->
                     JOptionPane.showMessageDialog(null, "Opcion " + opcion + " incorrecta");
             }
