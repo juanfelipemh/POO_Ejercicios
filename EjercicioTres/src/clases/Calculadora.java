@@ -6,13 +6,11 @@ import javax.swing.JOptionPane;
 
 public class Calculadora {
     
-    public String dato;
+    final String patronSplit = "\\+|-|\\*|/";
     
-    public List<String> historial;
+    public String datoOperacion;
     
-    public Calculadora(){
-        this.historial = new ArrayList<>();
-    }
+    public List<String> historial = new ArrayList<>();
     
     public List<String> getHistorial(){
         return historial;
@@ -20,12 +18,11 @@ public class Calculadora {
     
     public List<Double> calcular() {
         List<Double> numeros = new ArrayList<>();
-        String datos;
+        String datosOperando;
         String[] datosSeparados;
-        String patronSplit = "\\+|-|\\*|/";
-        datos = JOptionPane.showInputDialog("Ingrese los números: ");
-        dato = datos;
-        datosSeparados = datos.split(patronSplit);
+        datosOperando = JOptionPane.showInputDialog("Ingrese los números: ");
+        datoOperacion = datosOperando;
+        datosSeparados = datosOperando.split(patronSplit);
         for (String numero : datosSeparados) {
             numeros.add(Double.valueOf(numero));          
         }
@@ -37,7 +34,7 @@ public class Calculadora {
         for (double i : numeros) {
             num += i;   
         }
-        historial.add("Resultado de la suma " + dato + " es " + num);
+        historial.add("Resultado de la suma " + datoOperacion + " es " + num);
         return num;
     }
 
@@ -46,7 +43,7 @@ public class Calculadora {
         for (int i = 1; i < numeros.size(); i++) {
             num -= numeros.get(i);
         }
-        historial.add("Resultado de la resta " + dato + " es " + num);
+        historial.add("Resultado de la resta " + datoOperacion + " es " + num);
         return num;
     }
 
@@ -55,7 +52,7 @@ public class Calculadora {
         for (double i : numeros) {
             num *= i;
         }
-        historial.add("Resultado de la multiplicacion " + dato + " es " + num);
+        historial.add("Resultado de la multiplicacion " + datoOperacion + " es " + num);
         return num;
     }
 
@@ -64,7 +61,7 @@ public class Calculadora {
         for (int i = 1; i < numeros.size(); i++) {
             num = num / numeros.get(i);
         }
-        historial.add("Resultado de la division " + dato + " es " + num);
+        historial.add("Resultado de la division " + datoOperacion + " es " + num);
         return num;
     }
     

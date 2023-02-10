@@ -12,11 +12,11 @@ classes: </p>
 
 <p>Main must: </p>
 <ul>
-  <li>Run the project and I must be have a menu with options: 1.basic, 2.advanced and 3.child calculator, Also, 4.result option and 5.exit of the calculator</li>
-  <li>If I select option 1, must be show and option menu with: Addition, subtraction, multiplication and division. Also, an option to return to main menu</li>
-  <li>If I select option 2, must be show and option menu with: Addition, subtraction, multiplication, division, pow and square root. Also, an option to return to main menu</li>
-  <li>If I select option 3, must be show and option menu with: Addition, subtraction, multiplication and division. Also, an option to return to main menu</li>
-  <li>Each operation must be show the result</li>
+  <li>Run the project and it must be have a menu with options: 1. basic, 2. advanced and 3. child calculator, Also, 4. result option and 5. exit of the calculator</li>
+  <li>If I select option 1, must be shown an options menu with Addition, subtraction, multiplication and division. Also, an option to return to the main menu</li>
+  <li>If I select option 2, must be shown an options menu with Addition, subtraction, multiplication, division, pow and square root. Also, an option to return to the main menu</li>
+  <li>If I select option 3, must be shown an options menu with Addition, subtraction, multiplication and division. Also, an option to return to the main menu</li>
+  <li>Each operation must show the result</li>
   <li>The option child calculator only can receive 2 numbers to do the operation. If this receive more than 2 numbers, it advised to the user with a dialog message to insert only 2 numbers</li>
   <li>If I select option 4, the user can find the list with made operations</li>
 </ul>

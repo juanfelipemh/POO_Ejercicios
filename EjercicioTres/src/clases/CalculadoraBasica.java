@@ -6,26 +6,6 @@ import javax.swing.JOptionPane;
 public class CalculadoraBasica extends Calculadora {
 
     @Override
-    public double suma(List<Double> numeros) {
-        return super.suma(numeros);
-    }
-
-    @Override
-    public double resta(List<Double> numeros) {
-        return super.resta(numeros);
-    }
-
-    @Override
-    public double multiplicacion(List<Double> numeros) {
-        return super.multiplicacion(numeros);
-    }
-
-    @Override
-    public double division(List<Double> numeros) {
-        return super.division(numeros);
-    }
-
-    @Override
     public void operarCalculadora() {
         int opcion;
         do {
@@ -42,25 +22,25 @@ public class CalculadoraBasica extends Calculadora {
                     double total;
                     List<Double> numerosSuma = calcular();
                     total = suma(numerosSuma);
-                    JOptionPane.showMessageDialog(null, "El resultado de la suma " + dato + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la suma " + datoOperacion + " es: " + total);
                 }
                 case 2 -> {
                     double total;
                     List<Double> numerosResta = calcular();
                     total = resta(numerosResta);
-                    JOptionPane.showMessageDialog(null, "El resultado de la resta " + dato + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la resta " + datoOperacion + " es: " + total);
                 }
                 case 3 -> {
                     double total;
                     List<Double> numerosMultiplicacion = calcular();
                     total = multiplicacion(numerosMultiplicacion);
-                    JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + dato + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + datoOperacion + " es: " + total);
                 }
                 case 4 -> {
                     double total;
                     List<Double> numerosDivision = calcular();
                     total = division(numerosDivision);
-                    JOptionPane.showMessageDialog(null, "El resultado de la division " + dato + " es: " + total);
+                    JOptionPane.showMessageDialog(null, "El resultado de la division " + datoOperacion + " es: " + total);
                 }
                 case 5 -> {
                 }

@@ -6,31 +6,6 @@ import javax.swing.JOptionPane;
 public class CalculadoraInfantil extends Calculadora {
 
     @Override
-    public List<Double> calcular() {
-        return super.calcular(); 
-    }
-
-    @Override
-    public double suma(List<Double> numeros) {
-        return super.suma(numeros); 
-    }
-
-    @Override
-    public double resta(List<Double> numeros) {
-        return super.resta(numeros); 
-    }
-
-    @Override
-    public double multiplicacion(List<Double> numeros) {
-        return super.multiplicacion(numeros); 
-    }
-
-    @Override
-    public double division(List<Double> numeros) {
-        return super.division(numeros); 
-    }
-
-    @Override
     public void operarCalculadora() {
         int opcion;
         do {
@@ -50,7 +25,7 @@ public class CalculadoraInfantil extends Calculadora {
                         JOptionPane.showMessageDialog(null, "Unicamente ingrese 2 numeros");
                     } else {
                         total = suma(numerosSuma);
-                        JOptionPane.showMessageDialog(null, "El resultado de la suma " + dato + " es: " + total);
+                        JOptionPane.showMessageDialog(null, "El resultado de la suma " + datoOperacion + " es: " + total);
                     }
                 }
                 case 2 -> {
@@ -60,7 +35,7 @@ public class CalculadoraInfantil extends Calculadora {
                         JOptionPane.showMessageDialog(null, "Unicamente ingrese 2 numeros");
                     } else {
                         total = resta(numerosResta);
-                        JOptionPane.showMessageDialog(null, "El resultado de la resta " + dato + " es: " + total);
+                        JOptionPane.showMessageDialog(null, "El resultado de la resta " + datoOperacion + " es: " + total);
                     }
                 }
                 case 3 -> {
@@ -70,7 +45,7 @@ public class CalculadoraInfantil extends Calculadora {
                         JOptionPane.showMessageDialog(null, "Unicamente ingrese 2 numeros");
                     } else {
                         total = multiplicacion(numerosMultiplicacion);
-                        JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + dato + " es: " + total);
+                        JOptionPane.showMessageDialog(null, "El resultado de la multiplicacion " + datoOperacion + " es: " + total);
                     }
                 }
                 case 4 -> {
@@ -80,7 +55,7 @@ public class CalculadoraInfantil extends Calculadora {
                         JOptionPane.showMessageDialog(null, "Unicamente ingrese 2 numeros");
                     } else {
                         total = division(numerosDivision);
-                        JOptionPane.showMessageDialog(null, "El resultado de la division " + dato + " es: " + total);
+                        JOptionPane.showMessageDialog(null, "El resultado de la division " + datoOperacion + " es: " + total);
                     }
                 }
                 case 5 -> {
