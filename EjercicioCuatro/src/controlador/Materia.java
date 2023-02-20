@@ -6,10 +6,11 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import javax.swing.JOptionPane;
+import modelos.ModeloEstudiante;
 import modelos.ModeloMateria;
 
 public class Materia implements CRUD {
-    
+
     static public List<ModeloMateria> materias = new ArrayList<>();
 
     public List<ModeloMateria> getMaterias() {
@@ -62,17 +63,17 @@ public class Materia implements CRUD {
                                     eliminado = true;
                                     break;
                                 } else {
-                                    break;
+                                    return;
                                 }
                             }
                         }
                     }
-                    if (eliminado) {
-                        iterMaterias.remove();
-                        StringBuilder mensaje = new StringBuilder("Materia con codigo " + idMateria + " eliminada");
-                        JOptionPane.showMessageDialog(null, mensaje);
-                        break;
-                    }
+                }
+                if (existe || eliminado) {
+                    iterMaterias.remove();
+                    StringBuilder mensaje = new StringBuilder("Materia con codigo " + idMateria + " eliminada");
+                    JOptionPane.showMessageDialog(null, mensaje);
+                    break;
                 }
             }
             if (!existe) {
